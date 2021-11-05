@@ -1,0 +1,27 @@
+{
+	"name": "integrationRuntime1",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central US",
+				"nodeSize": "Standard_D4_v2",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "db1-server111113111.database.windows.net",
+					"catalogAdminUserName": "db1admin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
